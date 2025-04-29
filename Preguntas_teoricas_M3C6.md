@@ -82,14 +82,14 @@ Comprender estos verbos es fundamental al trabajar con cualquier API. Es como el
 #
 # ¿Es MongoDB una base de datos SQL o NoSQL?
 &#128204; Cuando comienzas a estudiar bases de datos, te encuentras con dos términos principales:
-- SQL - lenguaje estructurado de consultas, utilizado en bases de datos relacionales tradicionales para trabajar con tablas que contienen filas y columnas (Ejemplos: MySQL, PostgreSQL, Oracle, SQL Server).
-- NoSQL - un enfoque más flexible para almacenar datos. Las bases de datos NoSQL no utilizan tablas. Los datos se almacenan en forma de documentos o colecciones (Ejemplos: MongoDB, Cassandra, Redis, CouchDB).
+- **SQL** - lenguaje estructurado de consultas, utilizado en bases de datos relacionales tradicionales para trabajar con tablas que contienen filas y columnas (Ejemplos: MySQL, PostgreSQL, Oracle, SQL Server).
+- **NoSQL** - un enfoque más flexible para almacenar datos. Las bases de datos NoSQL no utilizan tablas. Los datos se almacenan en forma de documentos o colecciones (Ejemplos: MongoDB, Cassandra, Redis, CouchDB).
 #
-&#128204; **MongoDB es una base de datos NoSQL** orientada a documentos. En lugar de tablas y filas, MongoDB utiliza datos flexibles y no estructurados.
+&#128204; **MongoDB es una base de datos NoSQL** orientada a documentos. En lugar de tablas y filas, MongoDB utiliza datos flexibles y no estructurados.  
 **Estructura de MongoDB:**
-- Base de datos → contiene una o varias colecciones
-- Colección → contiene muchos documentos
-- Documento → es un registro individual en formato JSON
+- *Base de datos* → contiene una o varias colecciones
+- *Colección* → contiene muchos documentos
+- *Documento* → es un registro individual en formato JSON  
 **Ejemplo de un documento en MongoDB:**
 ```
 {
@@ -98,7 +98,7 @@ Comprender estos verbos es fundamental al trabajar con cualquier API. Es como el
   "email": "tiana@example.com"
 }
 ```
-Para trabajar con MongoDB en Python, necesitaremos la biblioteca ***pymongo***.
+Para trabajar con MongoDB en Python, necesitaremos la biblioteca **pymongo**.  
 Instala la biblioteca ejecutando el comando:
 ```
 pip install pymongo
