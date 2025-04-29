@@ -156,26 +156,39 @@ pip install requests
 ```
 #
 # ¿Qué es Postman?
+&#128204; **Postman** es una de las herramientas más populares utilizadas para probar APIs.
 
+Imagina que estás creando el backend de una tienda en línea. Necesitas verificar lo siguiente: ¿Cómo funciona el registro?; ¿El servidor devuelve correctamente la lista de productos?; ¿Se añade el producto al carrito correctamente?. Por supuesto, podrías escribir código para hacer estas comprobaciones, pero Postman te permite hacerlo más rápido, sin necesidad de escribir código. No importa qué curso estés estudiando, puedes usar Postman, ya que no está vinculado a ningún lenguaje de programación o framework específico.
+#
+&#128204; **Con Postman se puede:**
+- Crear y enviar solicitudes HTTP a una API.
+- Crear colecciones (conjuntos de solicitudes secuenciales) y carpetas de solicitudes para reducir el tiempo de prueba.
+- Modificar los parámetros de las solicitudes (por ejemplo, claves de autorización y URLs).
+- Cambiar los entornos de las solicitudes (por ejemplo, en entorno de pruebas, local o en servidor).
+- Añadir puntos de control durante las llamadas a la API (para registrar el momento de transmisión de datos).
+- Realizar pruebas automatizadas de la API utilizando una colección de solicitudes mediante el Collection Runner.
 
+Para comunicarse con los servidores, el programa utiliza el protocolo HTTP. Envía solicitudes de prueba desde el cliente al servidor y recibe una respuesta que indica si hay algún error en el funcionamiento de la API.
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+Postman está disponible como aplicación para Windows, Linux y macOS, así como en versión web (para usarla, es necesario instalar el programa Postman Desktop Agent).
+#
 # ¿Qué es el polimorfismo?
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 # ¿Qué es un método dunder?
 
