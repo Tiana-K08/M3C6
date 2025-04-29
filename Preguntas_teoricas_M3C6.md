@@ -7,7 +7,7 @@
 7. [¿Qué es el polimorfismo?](#qué-es-el-polimorfismo)
 8. [¿Qué es un método dunder?](#qué-es-un-método-dunder)
 9. [¿Qué es un decorador de Python?](#qué-es-un-decorador-de-python)
-
+#
 # ¿Para qué usamos Clases en Python?
 &#128204; **Clase** es una plantilla (esquema) para crear objetos que combinan datos (variables) y comportamiento (funciones). Se puede decir que una clase es una forma de describir qué es un objeto y cómo debe comportarse.
 
@@ -123,28 +123,28 @@ Esa aplicación no controla directamente los taxis, sino que utiliza una API par
 #
 &#128204; Las API pueden clasificarse según diferentes criterios. Aquí tienes los principales tipos de API:
 1. **API abiertas (Open APIs)**  
-Son APIs públicas, disponibles para que cualquiera las utilice. Ofrecen posibilidades de integración con diversas aplicaciones y servicios.
+Son APIs públicas, disponibles para que cualquiera las utilice. Ofrecen posibilidades de integración con diversas aplicaciones y servicios.  
 Ejemplo: *Twitter API, Google Maps API, OpenWeather API*.
 2. **API privadas (Private APIs)**  
-Están destinadas al uso interno dentro de una empresa u organización. Permiten que distintos sistemas y componentes se comuniquen entre sí internamente.
+Están destinadas al uso interno dentro de una empresa u organización. Permiten que distintos sistemas y componentes se comuniquen entre sí internamente.  
 Ejemplo: *APIs internas para la comunicación entre microservicios dentro de una empresa*.
 3. **API de socios (Partner APIs)**  
-Estas APIs están disponibles solo para un grupo limitado de desarrolladores o socios. Normalmente requieren una clave de API u otro método de autenticación.
+Estas APIs están disponibles solo para un grupo limitado de desarrolladores o socios. Normalmente requieren una clave de API u otro método de autenticación.  
 Ejemplo: *PayPal API para integrarse con servicios de pago, accesible solo para socios autorizados*.
 4. **API compuestas (Composite APIs)**  
-Permiten combinar múltiples fuentes de datos en una sola solicitud. Son útiles cuando se necesita obtener información de varios sistemas o servicios al mismo tiempo.
+Permiten combinar múltiples fuentes de datos en una sola solicitud. Son útiles cuando se necesita obtener información de varios sistemas o servicios al mismo tiempo.  
 Ejemplo: *Solicitar al mismo tiempo datos del usuario, pedidos y pagos desde distintos microservicios*.
 5. **API RESTful (REST APIs)**  
-REST (Representational State Transfer) es un estilo arquitectónico para el desarrollo de aplicaciones web. Las APIs RESTful utilizan solicitudes HTTP (GET, POST, PUT, DELETE) y se centran en recursos representados por URLs.
+REST (Representational State Transfer) es un estilo arquitectónico para el desarrollo de aplicaciones web. Las APIs RESTful utilizan solicitudes HTTP (GET, POST, PUT, DELETE) y se centran en recursos representados por URLs.  
 Ejemplo: *Google Maps API, GitHub API*.
 6. **API SOAP (Simple Object Access Protocol)**  
-SOAP es un protocolo para el intercambio de mensajes estructurados. Utiliza XML para enviar datos y puede operar sobre HTTP, SMTP u otros protocolos.
+SOAP es un protocolo para el intercambio de mensajes estructurados. Utiliza XML para enviar datos y puede operar sobre HTTP, SMTP u otros protocolos.  
 Ejemplo: *APIs bancarias o corporativas que requieren alta seguridad y fiabilidad*.
 7. **API GraphQL**  
-GraphQL es un lenguaje de consultas que permite a los clientes solicitar solo los datos que necesitan, evitando el exceso de información. Ofrece una alternativa más flexible que REST.
+GraphQL es un lenguaje de consultas que permite a los clientes solicitar solo los datos que necesitan, evitando el exceso de información. Ofrece una alternativa más flexible que REST.  
 Ejemplo: *GitHub GraphQL API*.
 8. **API WebSocket**  
-Permite establecer una comunicación bidireccional en tiempo real entre cliente y servidor. Es especialmente útil para aplicaciones que requieren intercambio de datos en tiempo real, como chats o juegos en línea.
+Permite establecer una comunicación bidireccional en tiempo real entre cliente y servidor. Es especialmente útil para aplicaciones que requieren intercambio de datos en tiempo real, como chats o juegos en línea.  
 Ejemplo: *Chats o plataformas de comercio en tiempo real*.
 
 Cada tipo de API tiene sus propias características y se utiliza en distintos contextos, según las necesidades y requisitos del proyecto.
