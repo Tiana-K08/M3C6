@@ -90,6 +90,7 @@ Comprender estos verbos es fundamental al trabajar con cualquier API. Es como el
 - *Base de datos* → contiene una o varias colecciones
 - *Colección* → contiene muchos documentos
 - *Documento* → es un registro individual en formato JSON  
+     
 **Ejemplo de un documento en MongoDB:**
 ```
 {
@@ -104,24 +105,25 @@ Instala la biblioteca ejecutando el comando:
 pip install pymongo
 ```
 - [Documentación de MongoDB](https://www.mongodb.com/docs/)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+#
 # ¿Qué es una API?
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 # ¿Qué es Postman?
 
