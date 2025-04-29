@@ -50,6 +50,42 @@ Las clases en Python son necesarias para:
 - Trabajar en el estilo de programación orientada a objetos.
 #
 # ¿Qué método se ejecuta automáticamente cuando se crea una instancia de una clase?
+&#128204; Cuando creas una instancia de una clase en el lenguaje de programación Python (es decir, un objeto basado en esa clase), hay un método especial que se llama automáticamente. Este método se llama **\_\_init\_\_**.
+
+**El método \_\_init\_\_** es una función constructora especial y reservada en Python que inicializa (es decir, configura) un nuevo objeto cuando se crea. En otras palabras, cuando creas un objeto, Python llama automáticamente a \_\_init\_\_, y puedes usarlo para preparar el objeto para su funcionamiento.
+#
+&#128204; **Un ejemplo**:
+```
+class Person:
+    def __init__(self, name, age):
+        self.name = name
+        self.age = age
+```
+Ahora podemos crear un objeto:
+```
+person1 = Person('Tiana', 35)  # creando un objeto
+
+print(person1.name)  # Tiana
+print(person1.age)  # 35
+```
+¿Qué ocurre aquí paso a paso?
+- Se declara la clase Person.
+- Dentro de la clase, se define el método *\_\_init\_\_*, que acepta los parámetros(argumentos) name y age.
+- Cuando se crea el objeto person1, Python llama automáticamente al método \_\_init\_\_, pasándole los valores "Tiana" y 35.
+- Dentro de *\_\_init\_\_, estos valores se almacenan en el objeto usando self.name y self.age.
+#
+:white_check_mark: **Conclusión**  
+¿Para qué sirve *\_\_init\_\_*?
+- Facilita la creación de objetos con los datos iniciales necesarios.
+- Permite configurar el objeto directamente en el momento de su creación.
+- Hace que el código sea más legible y predecible.
+
+
+
+
+
+
+
 
 # ¿Cuáles son los tres verbos de API?
 
