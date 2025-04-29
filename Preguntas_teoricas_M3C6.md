@@ -19,7 +19,7 @@ Imaginemos que estás creando un juego y tienes personajes. Cada personaje tiene
 - *Encapsulación*. Ocultar la lógica interna de un objeto. Por ejemplo, podemos hacer que otras partes del programa no puedan modificar directamente las variables internas del objeto.
 - *Simplificación de sistemas complejos*. Las clases permiten combinar datos y comportamiento en un solo objeto, lo que facilita el diseño de programas complejos.
 # 
-&#128204; Ejemplo de **sintaxis de una clase** en Python:
+&#128204; **Ejemplo de sintaxis de una clase** en Python:
 ```
 class Person:
     def __init__(self, name, age):
@@ -50,9 +50,9 @@ Las clases en Python son necesarias para:
 - Trabajar en el estilo de programación orientada a objetos.
 #
 # ¿Qué método se ejecuta automáticamente cuando se crea una instancia de una clase?
-&#128204; Cuando creas una instancia de una clase en el lenguaje de programación Python (es decir, un objeto basado en esa clase), hay un método especial que se llama automáticamente. Este método se llama **\_\_init\_\_**.
+&#128204; Cuando creas una instancia de una clase en el lenguaje de programación Python (es decir, un objeto basado en esa clase), hay un método especial que se llama automáticamente. Este método se llama *\_\_init\_\_*.
 
-**El método \_\_init\_\_** es una función constructora especial y reservada en Python que inicializa (es decir, configura) un nuevo objeto cuando se crea. En otras palabras, cuando creas un objeto, Python llama automáticamente a \_\_init\_\_, y puedes usarlo para preparar el objeto para su funcionamiento.
+**El método \_\_init\_\_** es una función constructora especial y reservada en Python que inicializa (es decir, configura) un nuevo objeto cuando se crea. En otras palabras, cuando creas un objeto, Python llama automáticamente a *\_\_init\_\_*, y puedes usarlo para preparar el objeto para su funcionamiento.
 #
 &#128204; **Un ejemplo**:
 ```
@@ -79,17 +79,41 @@ Dentro de *\_\_init\_\_*, estos valores se almacenan en el objeto usando self.na
 - Facilita la creación de objetos con los datos iniciales necesarios.
 - Permite configurar el objeto directamente en el momento de su creación.
 - Hace que el código sea más legible y predecible.
-
-
-
-
-
-
-
-
+#
 # ¿Cuáles son los tres verbos de API?
+&#128204; Cuando los desarrolladores trabajan con una API (ver la pregunta 5: [¿Qué es una API?](#qué-es-una-api)), a menudo interactúan con los datos mediante solicitudes HTTP. Estas solicitudes utilizan "verbos" especiales (métodos) para indicarle al servidor qué se debe hacer con los datos.
 
+Los verbos de API más utilizados son:
+- **POST** – crea / escribe nuevos datos
+Envía datos al servidor para crear un nuevo objeto.
+- **GET** – solicita / obtiene datos
+Obtiene información del servidor. No modifica los datos, solo los lee.
+- **PUT** – actualiza / sobrescribe datos
+Actualiza completamente un objeto existente.
+
+También existen otros métodos HTTP, como DELETE, que elimina el objeto especificado del servidor.
+  
+![](images/api_metods.jpeg)
+  
+Comprender estos verbos es fundamental al trabajar con cualquier API. Es como el “lenguaje” de comunicación entre el cliente (tu aplicación) y el servidor.
+#
 # ¿Es MongoDB una base de datos SQL o NoSQL?
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 # ¿Qué es una API?
 
