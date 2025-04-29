@@ -86,6 +86,7 @@ Comprender estos verbos es fundamental al trabajar con cualquier API. Es como el
 - **NoSQL** - un enfoque más flexible para almacenar datos. Las bases de datos NoSQL no utilizan tablas. Los datos se almacenan en forma de documentos o colecciones (Ejemplos: MongoDB, Cassandra, Redis, CouchDB).
 #
 &#128204; **MongoDB es una base de datos NoSQL** orientada a documentos. En lugar de tablas y filas, MongoDB utiliza datos flexibles y no estructurados.  
+      
 **Estructura de MongoDB:**
 - *Base de datos* → contiene una o varias colecciones
 - *Colección* → contiene muchos documentos
@@ -99,7 +100,8 @@ Comprender estos verbos es fundamental al trabajar con cualquier API. Es como el
   "email": "tiana@example.com"
 }
 ```
-Para trabajar con MongoDB en Python, necesitaremos la biblioteca **pymongo**.  
+#
+&#128204; Para trabajar con MongoDB en Python, necesitaremos la biblioteca ```pymongo```.  
 Instala la biblioteca ejecutando el comando:
 ```
 pip install pymongo
@@ -107,25 +109,71 @@ pip install pymongo
 - [Documentación de MongoDB](https://www.mongodb.com/docs/)
 #
 # ¿Qué es una API?
+&#128204; Cuando comienzas a trabajar con programación, a menudo escuchas la palabra API. **API (Application Programming Interface)** es un conjunto de reglas que permite que diferentes programas y servicios se comuniquen entre sí. Define cómo deben interactuar los componentes de un sistema, cómo deben intercambiar datos y ejecutar acciones.
 
+Imagina que quieres pedir un taxi a través de una aplicación en tu teléfono.
+Esa aplicación no controla directamente los taxis, sino que utiliza una API para enviar una solicitud al servidor de la empresa de taxis. El servidor procesa la solicitud, encuentra el taxi más cercano y te envía una respuesta con la información del vehículo y el tiempo estimado de llegada.
+#
+&#128204; Cuando usas una API, envías una solicitud desde el cliente (por ejemplo, tu aplicación) hacia un servidor, el cual procesa la solicitud y te envía una respuesta. Esta interacción puede realizarse en diferentes formatos, como JSON, XML u otros.
 
+**Esquema de funcionamiento de una API:**
+- *Solicitud*: El cliente (tu aplicación) envía una solicitud al servidor a través de la API.
+- *Procesamiento*: El servidor recibe la solicitud, ejecuta las acciones necesarias y genera una respuesta.
+- *Respuesta*: El servidor envía una respuesta al cliente. Esta puede ser, por ejemplo, una lista de datos, un mensaje de estado o un error.
+#
+&#128204; Las API pueden clasificarse según diferentes criterios. Aquí tienes los principales tipos de API:
+1. **API abiertas (Open APIs)**  
+Son APIs públicas, disponibles para que cualquiera las utilice. Ofrecen posibilidades de integración con diversas aplicaciones y servicios.
+Ejemplo: *Twitter API, Google Maps API, OpenWeather API*.
+2. **API privadas (Private APIs)**  
+Están destinadas al uso interno dentro de una empresa u organización. Permiten que distintos sistemas y componentes se comuniquen entre sí internamente.
+Ejemplo: *APIs internas para la comunicación entre microservicios dentro de una empresa*.
+3. **API de socios (Partner APIs)**  
+Estas APIs están disponibles solo para un grupo limitado de desarrolladores o socios. Normalmente requieren una clave de API u otro método de autenticación.
+Ejemplo: *PayPal API para integrarse con servicios de pago, accesible solo para socios autorizados*.
+4. **API compuestas (Composite APIs)**  
+Permiten combinar múltiples fuentes de datos en una sola solicitud. Son útiles cuando se necesita obtener información de varios sistemas o servicios al mismo tiempo.
+Ejemplo: *Solicitar al mismo tiempo datos del usuario, pedidos y pagos desde distintos microservicios*.
+5. **API RESTful (REST APIs)**  
+REST (Representational State Transfer) es un estilo arquitectónico para el desarrollo de aplicaciones web. Las APIs RESTful utilizan solicitudes HTTP (GET, POST, PUT, DELETE) y se centran en recursos representados por URLs.
+Ejemplo: *Google Maps API, GitHub API*.
+6. **API SOAP (Simple Object Access Protocol)**  
+SOAP es un protocolo para el intercambio de mensajes estructurados. Utiliza XML para enviar datos y puede operar sobre HTTP, SMTP u otros protocolos.
+Ejemplo: *APIs bancarias o corporativas que requieren alta seguridad y fiabilidad*.
+7. **API GraphQL**  
+GraphQL es un lenguaje de consultas que permite a los clientes solicitar solo los datos que necesitan, evitando el exceso de información. Ofrece una alternativa más flexible que REST.
+Ejemplo: *GitHub GraphQL API*.
+8. **API WebSocket**  
+Permite establecer una comunicación bidireccional en tiempo real entre cliente y servidor. Es especialmente útil para aplicaciones que requieren intercambio de datos en tiempo real, como chats o juegos en línea.
+Ejemplo: *Chats o plataformas de comercio en tiempo real*.
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+Cada tipo de API tiene sus propias características y se utiliza en distintos contextos, según las necesidades y requisitos del proyecto.
+#
+&#128204; Para trabajar con APIs en Python, se utiliza frecuentemente la biblioteca ```requests```.  
+Puedes instalarla con el siguiente comando:
+```
+pip install requests
+```
+#
 # ¿Qué es Postman?
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 # ¿Qué es el polimorfismo?
 
