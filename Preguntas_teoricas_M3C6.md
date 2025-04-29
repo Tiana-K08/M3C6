@@ -171,6 +171,8 @@ Imagina que estás creando el backend de una tienda en línea. Necesitas verific
 Para comunicarse con los servidores, el programa utiliza el protocolo HTTP. Envía solicitudes de prueba desde el cliente al servidor y recibe una respuesta que indica si hay algún error en el funcionamiento de la API.
 
 Postman está disponible como aplicación para Windows, Linux y macOS, así como en versión web (para usarla, es necesario instalar el programa Postman Desktop Agent).
+
+- [Documentación de Postman](https://learning.postman.com/docs/introduction/overview/)
 #
 # ¿Qué es el polimorfismo?
 
