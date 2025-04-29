@@ -43,12 +43,6 @@ person1.say_hello()  # ¡Hola! Mi nombre es Tiana, tengo 35 años.
 person2.say_hello()  # ¡Hola! Mi nombre es Kira, tengo 10 años.
 ```
 # 
-:white_check_mark: **Conclusión**  
-Las clases en Python son necesarias para:
-- Describir y utilizar fácilmente objetos con propiedades y comportamientos comunes.
-- Estructurar, simplificar y reutilizar el código.
-- Trabajar en el estilo de programación orientada a objetos.
-#
 # ¿Qué método se ejecuta automáticamente cuando se crea una instancia de una clase?
 &#128204; Cuando creas una instancia de una clase en el lenguaje de programación Python (es decir, un objeto basado en esa clase), hay un método especial que se llama automáticamente. Este método se llama *\_\_init\_\_*.
 
@@ -74,30 +68,42 @@ Dentro de la clase, se define el método *\_\_init\_\_*, que acepta los parámet
 Cuando se crea el objeto person1, Python llama automáticamente al método *\_\_init\_\_*, pasándole los valores "Tiana" y 35.
 Dentro de *\_\_init\_\_*, estos valores se almacenan en el objeto usando self.name y self.age.
 #
-:white_check_mark: **Conclusión**  
-¿Para qué sirve *\_\_init\_\_*?
-- Facilita la creación de objetos con los datos iniciales necesarios.
-- Permite configurar el objeto directamente en el momento de su creación.
-- Hace que el código sea más legible y predecible.
-#
 # ¿Cuáles son los tres verbos de API?
 &#128204; Cuando los desarrolladores trabajan con una API (ver la pregunta 5: [¿Qué es una API?](#qué-es-una-api)), a menudo interactúan con los datos mediante solicitudes HTTP. Estas solicitudes utilizan "verbos" especiales (métodos) para indicarle al servidor qué se debe hacer con los datos.
 
 Los verbos de API más utilizados son:
-- **POST** – crea / escribe nuevos datos
-Envía datos al servidor para crear un nuevo objeto.
-- **GET** – solicita / obtiene datos
-Obtiene información del servidor. No modifica los datos, solo los lee.
-- **PUT** – actualiza / sobrescribe datos
-Actualiza completamente un objeto existente.
+- **POST** – crea / escribe nuevos datos. Envía datos al servidor para crear un nuevo objeto.
+- **GET** – solicita / obtiene datos. Obtiene información del servidor. No modifica los datos, solo los lee.
+- **PUT** – actualiza / sobrescribe datos. Actualiza completamente un objeto existente.
 
-También existen otros métodos HTTP, como DELETE, que elimina el objeto especificado del servidor.
-  
+También existen otros métodos HTTP, como **DELETE**, que elimina el objeto especificado del servidor.
 ![](images/api_metods.jpeg)
-  
 Comprender estos verbos es fundamental al trabajar con cualquier API. Es como el “lenguaje” de comunicación entre el cliente (tu aplicación) y el servidor.
 #
 # ¿Es MongoDB una base de datos SQL o NoSQL?
+&#128204; Cuando comienzas a estudiar bases de datos, te encuentras con dos términos principales:
+- SQL - lenguaje estructurado de consultas, utilizado en bases de datos relacionales tradicionales para trabajar con tablas que contienen filas y columnas (Ejemplos: MySQL, PostgreSQL, Oracle, SQL Server).
+- NoSQL - un enfoque más flexible para almacenar datos. Las bases de datos NoSQL no utilizan tablas. Los datos se almacenan en forma de documentos o colecciones (Ejemplos: MongoDB, Cassandra, Redis, CouchDB).
+#
+&#128204; **MongoDB es una base de datos NoSQL** orientada a documentos. En lugar de tablas y filas, MongoDB utiliza datos flexibles y no estructurados.
+**Estructura de MongoDB:**
+- Base de datos → contiene una o varias colecciones
+- Colección → contiene muchos documentos
+- Documento → es un registro individual en formato JSON
+**Ejemplo de un documento en MongoDB:**
+```
+{
+  "name": "Tiana",
+  "age": 35,
+  "email": "tiana@example.com"
+}
+```
+Para trabajar con MongoDB en Python, necesitaremos la biblioteca ***pymongo***.
+Instala la biblioteca ejecutando el comando:
+```
+pip install pymongo
+```
+- [Documentación de MongoDB](https://www.mongodb.com/docs/)
 
 
 
