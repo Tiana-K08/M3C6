@@ -29,10 +29,10 @@ class Person:
     def say_hello(self):
         print(f'¡Hola! Mi nombre es {self.name}, tengo {self.age} años.')
 ```
-- **class** - palabra clave para crear una clase.
-- **\_\_init\_\_()** - método especial que se llama al crear un objeto. Sirve para inicializar (asignar valores iniciales) al objeto y se ejecuta automáticamente cuando se crea.
-- **self** - referencia al propio objeto. Se usa para acceder a las propiedades y métodos dentro de la clase.
-- **def()** - métodos (funciones) dentro de la clase. Describen lo que el objeto puede hacer.
+*class* - palabra clave para crear una clase.
+*\_\_init\_\_()* - método especial que se llama al crear un objeto. Sirve para inicializar (asignar valores iniciales) al objeto y se ejecuta automáticamente cuando se crea.
+*self* - referencia al propio objeto. Se usa para acceder a las propiedades y métodos dentro de la clase.
+*def()* - métodos (funciones) dentro de la clase. Describen lo que el objeto puede hacer.
 
 Ahora podemos crear un objeto (una instancia de la clase):
 ```
@@ -68,11 +68,11 @@ person1 = Person('Tiana', 35)  # creando un objeto
 print(person1.name)  # Tiana
 print(person1.age)  # 35
 ```
-¿Qué ocurre aquí paso a paso?
-- Se declara la clase Person.
-- Dentro de la clase, se define el método *\_\_init\_\_*, que acepta los parámetros(argumentos) name y age.
-- Cuando se crea el objeto person1, Python llama automáticamente al método \_\_init\_\_, pasándole los valores "Tiana" y 35.
-- Dentro de *\_\_init\_\_, estos valores se almacenan en el objeto usando self.name y self.age.
+¿Qué ocurre aquí paso a paso?:
+Se declara la clase Person.
+Dentro de la clase, se define el método *\_\_init\_\_*, que acepta los parámetros(argumentos) name y age.
+Cuando se crea el objeto person1, Python llama automáticamente al método *\_\_init\_\_*, pasándole los valores "Tiana" y 35.
+Dentro de *\_\_init\_\_*, estos valores se almacenan en el objeto usando self.name y self.age.
 #
 :white_check_mark: **Conclusión**  
 ¿Para qué sirve *\_\_init\_\_*?
