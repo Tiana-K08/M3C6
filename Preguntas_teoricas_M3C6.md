@@ -77,7 +77,7 @@ Los verbos de API más utilizados son:
 - **PUT** – actualiza / sobrescribe datos. Actualiza completamente un objeto existente.
 
 También existen otros métodos HTTP, como **DELETE**, que elimina el objeto especificado del servidor.
-![](images/api_metods.jpeg)
+![Métodos de API](images/api_metods.jpeg)
 Comprender estos verbos es fundamental al trabajar con cualquier API. Es como el “lenguaje” de comunicación entre el cliente (tu aplicación) y el servidor.
 #
 # ¿Es MongoDB una base de datos SQL o NoSQL?
@@ -110,7 +110,7 @@ pip install pymongo
 #
 # ¿Qué es una API?
 &#128204; Cuando comienzas a trabajar con programación, a menudo escuchas la palabra API. **API (Application Programming Interface)** es un conjunto de reglas que permite que diferentes programas y servicios se comuniquen entre sí. Define cómo deben interactuar los componentes de un sistema, cómo deben intercambiar datos y ejecutar acciones.
-![](images/api.jpg)
+![Que es API](images/api.jpg)
 Imagina que quieres pedir un taxi a través de una aplicación en tu teléfono.
 Esa aplicación no controla directamente los taxis, sino que utiliza una API para enviar una solicitud al servidor de la empresa de taxis. El servidor procesa la solicitud, encuentra el taxi más cercano y te envía una respuesta con la información del vehículo y el tiempo estimado de llegada.
 #
@@ -156,7 +156,7 @@ pip install requests
 ```
 #
 # ¿Qué es Postman?
-&#128204; **Postman** es una de las herramientas más populares utilizadas para probar APIs.
+&#128204; **Postman** es una de las herramientas más populares utilizadas para probar APIs. Para comunicarse con los servidores, el programa utiliza el protocolo HTTP. Envía solicitudes de prueba desde el cliente al servidor y recibe una respuesta que indica si hay algún error en el funcionamiento de la API.
 
 Imagina que estás creando el backend de una tienda en línea. Necesitas verificar lo siguiente: ¿Cómo funciona el registro?; ¿El servidor devuelve correctamente la lista de productos?; ¿Se añade el producto al carrito correctamente?. Por supuesto, podrías escribir código para hacer estas comprobaciones, pero Postman te permite hacerlo más rápido, sin necesidad de escribir código. No importa qué curso estés estudiando, puedes usar Postman, ya que no está vinculado a ningún lenguaje de programación o framework específico.
 #
@@ -167,9 +167,7 @@ Imagina que estás creando el backend de una tienda en línea. Necesitas verific
 - Cambiar los entornos de las solicitudes (por ejemplo, en entorno de pruebas, local o en servidor).
 - Añadir puntos de control durante las llamadas a la API (para registrar el momento de transmisión de datos).
 - Realizar pruebas automatizadas de la API utilizando una colección de solicitudes mediante el Collection Runner.
-
-Para comunicarse con los servidores, el programa utiliza el protocolo HTTP. Envía solicitudes de prueba desde el cliente al servidor y recibe una respuesta que indica si hay algún error en el funcionamiento de la API.
-
+#
 Postman está disponible como aplicación para Windows, Linux y macOS, así como en versión web (para usarla, es necesario instalar el programa Postman Desktop Agent).
 
 - [Documentación de Postman](https://learning.postman.com/docs/introduction/overview/)
@@ -213,7 +211,7 @@ Aunque el método tiene el mismo nombre, el comportamiento es diferente para cad
 #
 # ¿Qué es un método dunder?
 &#128204; Si has empezado a aprender Python, seguramente ya te has encontrado con métodos que parecen un poco extraños y tienen una sintaxis especial: ```__init__()```, ```__repr__()```. Estos métodos siempre comienzan y terminan con dos guiones bajos. Dichos métodos se llaman **métodos dunder** (*del inglés double underscore — doble guion bajo*).
-!
+![Métodos dunder](images/dunder.jpg)
 Esto está relacionado con la forma en que Python maneja los métodos privados y protegidos dentro de las clases. Mientras que en muchos otros lenguajes de programación no es necesario usar esta estructura - ya que existen mecanismos estándar para declarar métodos privados - en Python no existe esa funcionalidad como tal. Por eso se tomó la decisión de crear los **métodos dunder**. Así, cada vez que ves un método con doble guion bajo en Python, significa que es un método que se puede utilizar, pero no se puede anular ni modificar su comportamiento principal de ninguna forma.
 #
 &#128204; **Por ejemplo**, el método ```__str__()``` — que se utiliza con frecuencia — es un método especial (dunder) que sirve para devolver una representación en forma de cadena (string) del objeto cuando se llama a la función ```print()``` o ```str()```. Su propósito es mostrar el objeto de manera clara y comprensible para el usuario.
