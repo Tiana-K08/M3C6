@@ -168,7 +168,7 @@ Imagina que estás creando el backend de una tienda en línea. Necesitas verific
 - Añadir puntos de control durante las llamadas a la API (para registrar el momento de transmisión de datos).
 - Realizar pruebas automatizadas de la API utilizando una colección de solicitudes mediante el Collection Runner.
 #
-Postman está disponible como aplicación para Windows, Linux y macOS, así como en versión web (para usarla, es necesario instalar el programa Postman Desktop Agent).
+&#128204; Postman está disponible como aplicación para Windows, Linux y macOS, así como en versión web (para usarla, es necesario instalar el programa Postman Desktop Agent).
 
 - [Documentación de Postman](https://learning.postman.com/docs/introduction/overview/)
 #
@@ -210,8 +210,10 @@ for student in students:
 Aunque el método tiene el mismo nombre, el comportamiento es diferente para cada estudiante: uno resuelve ecuaciones, otro dibuja, y otro hace ejercicio. Esto es **polimorfismo**: la capacidad de usar una misma interfaz (en este caso, un método) para objetos de distintos tipos, con comportamientos distintos.
 #
 # ¿Qué es un método dunder?
-&#128204; Si has empezado a aprender Python, seguramente ya te has encontrado con métodos que parecen un poco extraños y tienen una sintaxis especial: ```__init__()```, ```__repr__()```. Estos métodos siempre comienzan y terminan con dos guiones bajos. Dichos métodos se llaman **métodos dunder** (*del inglés double underscore — doble guion bajo*).
-![Métodos dunder](images/dunder.jpg)
+&#128204; Si has empezado a aprender Python, seguramente ya te has encontrado con métodos que parecen un poco extraños y tienen una sintaxis especial: ```__init__()```, ```__repr__()```. Estos métodos siempre comienzan y terminan con dos guiones bajos. Dichos métodos se llaman **métodos dunder** (*del inglés double underscore — doble guion bajo*).  
+
+![Métodos dunder](images/dunder.jpg)  
+
 Esto está relacionado con la forma en que Python maneja los métodos privados y protegidos dentro de las clases. Mientras que en muchos otros lenguajes de programación no es necesario usar esta estructura - ya que existen mecanismos estándar para declarar métodos privados - en Python no existe esa funcionalidad como tal. Por eso se tomó la decisión de crear los **métodos dunder**. Así, cada vez que ves un método con doble guion bajo en Python, significa que es un método que se puede utilizar, pero no se puede anular ni modificar su comportamiento principal de ninguna forma.
 #
 &#128204; **Por ejemplo**, el método ```__str__()``` — que se utiliza con frecuencia — es un método especial (dunder) que sirve para devolver una representación en forma de cadena (string) del objeto cuando se llama a la función ```print()``` o ```str()```. Su propósito es mostrar el objeto de manera clara y comprensible para el usuario.
