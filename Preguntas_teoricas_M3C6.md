@@ -175,23 +175,57 @@ Postman está disponible como aplicación para Windows, Linux y macOS, así como
 - [Documentación de Postman](https://learning.postman.com/docs/introduction/overview/)
 #
 # ¿Qué es el polimorfismo?
+&#128204; **El polimorfismo** significa la capacidad de una misma interfaz (método, función, acción) de comportarse de manera diferente según el contexto.
 
+En la programación orientada a objetos, el polimorfismo juega un papel muy importante. Ayuda a que el código sea:
+- *flexible* - se puede usar una misma interfaz para diferentes objetos.
+- *reutilizable* - se puede escribir menos código.
+- *extensible* - es fácil añadir nuevas clases sin romper el código existente.
+#
+&#128204; **Ejemplo de polimorfismo en Python**  
+Imaginemos que tenemos estudiantes que asisten a diferentes clases escolares: matemáticas, arte y educación física. Cada estudiante tiene una acción común: asistir a clase. Sin embargo, dependiendo de la clase a la que asistan, su comportamiento será diferente.  
+Creamos una clase base llamada ```Student``` con un método ```attend_lesson```, que representa el comportamiento general de un estudiante. Luego creamos tres subclases: ```MathStudent```, ```ArtStudent``` y ```PEStudent```, cada una sobrescribiendo ese método a su manera.
+```
+class Student:
+    def attend_lesson(self):
+        print("El estudiante asiste a una clase.")
 
+class MathStudent(Student):
+    def attend_lesson(self):
+        print("El estudiante resuelve ecuaciones en la clase de matemáticas.")
 
+class ArtStudent(Student):
+    def attend_lesson(self):
+        print("El estudiante dibuja en la clase de arte.")
 
+class PEStudent(Student):
+    def attend_lesson(self):
+        print("El estudiante hace ejercicio en la clase de educación física.")
+```
+Después, colocamos a todos los estudiantes en una lista y llamamos al método ```attend_lesson``` para cada uno. 
+```
+students = [MathStudent(), ArtStudent(), PEStudent()]
 
-
-
-
-
-
-
-
-
-
-
-
-
+for student in students:
+    student.attend_lesson()
+```
+Aunque el método tiene el mismo nombre, el comportamiento es diferente para cada estudiante: uno resuelve ecuaciones, otro dibuja, y otro hace ejercicio. Esto es **polimorfismo**: la capacidad de usar una misma interfaz (en este caso, un método) para objetos de distintos tipos, con comportamientos distintos.
+#
 # ¿Qué es un método dunder?
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 # ¿Qué es un decorador de Python?
