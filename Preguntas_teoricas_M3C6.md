@@ -255,7 +255,7 @@ say_hello()
 ```
 Result.
 ```
-Texto antes de la función.
-Hola!
-Texto después de la función.
+# Texto antes de la función.
+# Hola!
+# Texto después de la función.
 ```
