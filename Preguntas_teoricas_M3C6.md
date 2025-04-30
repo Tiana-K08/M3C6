@@ -231,3 +231,31 @@ print(person1) # Olga, 22 años
 ```
 #
 # ¿Qué es un decorador de Python?
+&#128204; Los **decoradores** en Python son funciones que toman otra función como argumento y amplían su funcionalidad sin modificar el código original. Los decoradores se indican con el símbolo ```@decorator_name```, que se coloca encima de la definición de la función. Es una herramienta poderosa y conveniente que permite modificar el comportamiento de funciones o clases sin cambiar directamente su código.
+#
+&#128204; **Veamos un ejemplo:**   
+Un decorador que añade un mensaje antes y después de la ejecución de la función.
+```
+def my_decorator(func):
+    def wrapper():
+        print("Texto antes de la función.")
+        func()
+        print("Texto después de la función.")
+    return wrapper
+```
+Uso del decorador.
+```
+@my_decorator
+def say_hello():
+    print("Hola!")
+```
+Llamada a la función.
+```
+say_hello()
+```
+Result.
+```
+Texto antes de la función.
+Hola!
+Texto después de la función.
+```
